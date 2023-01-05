@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Roboto: wght @300 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --jsColor: #F0DB4F;
+    --reactColor: #04D8F9;
+    --nodejsColor: #68A063;
+    
+    --corDestaque: #297BD4;
+    --corFundoPrincipal: #212025;
+    --corFundoSecundaria: #121214;
+
+    --fontePrincpal: 'Noto Sans', sans-serif;
+    --fonteSecundaria: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--corFundoSecundaria);
+}
+
+main {
+    padding: 5px;
+    display: flex;
+    min-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--corFundoPrincipal);
+    box-shadow: 1px 2px 138px 18px rgba(27,83,156,1);
+    -webkit-box-shadow: 0px 1px 900px 70px rgb(27 83 156 / 88%);    -moz-box-shadow: 1px 2px 138px 18px rgba(27,83,156,1);
+}
+
+#atualizar {
+    padding: 5px;
+    display: flex;
+    font-size: 0.6em;
+    margin-top: 1px;
+    min-width: 350px;
+    color: #6E6D72;
+    min-height: 50px;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 10px 10px ;
+    font-family: var(--fonteSecundaria);
+    background: var(--corFundoPrincipal);
+}
+
+#containerFoto {
+    padding: 10px 10px 5px 10px;
+    border-radius: 100%;
+    border: 7px solid var(--corDestaque);
+}
+
+#fotoDePerfil {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+    color: #939297;
+    font-weight: 300;
+}
+
+.fontePrincipal {
+    color: #ccc;
+    font-family: var(--fontePrincpal);
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardSkills {
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0 5px 0 5px;
+    background-color: #ccc;
+}
+
+#skills > div >svg {
+    font-size: 1.5em;
+}
+
+#JS {
+    background: var(--jsColor);
+}
+
+#REACT {
+    background: var(--reactColor);
+}
+
+#NODEJS {
+    background: var(--nodejsColor);
+}
+
+#conectar {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 15vw;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: var(--corDestaque);
+}
